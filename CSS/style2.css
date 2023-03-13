@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: xx-large;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  height: 95vh;
+  display: grid;
+  grid-template-areas: "inputs img"
+    "boton boton";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  border: 20px double #ff6550;
+  background: #dbc9f2;
+  border-radius: 40px;
+  box-shadow: 22px 22px 22px 22px rgba(219, 201, 242, 0.79);
+  -webkit-box-shadow: 22px 22px 22px 22px rgba(219, 201, 242, 0.79);
+  -moz-box-shadow: 22px 22px 22px 22px rgba(219, 201, 242, 0.79);
+}
+
+.inputs {
+  grid-area: inputs;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5%;
+}
+
+.imagen {
+  grid-area: img;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.imagen #img-preview {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+label {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 2%;
+}
+
+.botones {
+  width: 100%;
+  grid-area: boton;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2%;
+}
+
+button {
+  font-weight: 0;
+  font-size: xx-large;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 1%;
+  width: 20%;
+  height: 70%;
+  border-radius: 40px;
+  border:1px solid;
+}
+
+button:hover {
+  color: #0066CC;
+  background-color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+#cancelar:hover {
+  background-color: #000000;
+  color:#d90f37;
+  border:#fff;
+}
+#cancelar {
+  background-color: #d90f37;
+}

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: xx-large;
+}
+
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.personajes {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    gap: 1vw;
+    overflow-y: hidden;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+
+.personajes img {
+    height: 20vh;
+    width: 20vh;
+    padding: 0;
+}
+
+.container {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 20px double #ff6550;
+    background: #dbc9f2;
+    border-radius: 40px;
+    box-shadow: 22px 44px 48px 41px rgba(219, 201, 242, 0.79);
+    -webkit-box-shadow: 22px 44px 48px 41px rgba(219, 201, 242, 0.79);
+    -moz-box-shadow: 22px 44px 48px 41px rgba(219, 201, 242, 0.79);
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 60%;
+}
+
+
+.imagen {
+    height: 95%;
+    width: 45%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    padding: 3%;
+}
+
+.inputs {
+    height: 95%;
+    width: 65%;
+}
+
+.nombre {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombre #nombre {
+    width: 80%;
+}
+
+
+.criterio {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.criterio #criterios {
+    width: 80%;
+}
+
+.botones {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.btn {
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 10px 30px;
+    border: 2px solid #0066cc;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #cc0000;
+    border: solid 2px #cc007a;
+}
+
+.btn-agregar {
+    background-color: #00cc03;
+    border: 2px solid #00cc29;
+}
+
+.resultados {
+    height: 30vh;
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script defer src="./js/main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="personajes">
+    </div>
+    <div class="container">
+      <h1>BUSCAR CONTACTO</h1>
+      <div class="busqueda">
+        <div class="inputs">
+          <div class="nombre">
+            <label for="">Nombre</label>
+            <input type="text" id="nombre" spaceholder="nombre" />
+          </div>
+          <div class="criterio">
+            <label for="">Criterio</label>
+            <select id="criterios" name="criterios">
+              <option value="todos"></option>
+              <option value="nombre">Nombre</option>
+              <option value="apellido">Apellido</option>
+              <option value="cel">Cel</option>
+              <option value="gustos">Gustos</option>
+            </select>
+          </div>
+          <div class="botones">
+            <button class="btn btn-buscar" id="buscar">Buscar</button>
+            <button class="btn btn-agregar" id="agregar">Agregar</button>
+          </div>
+        </div>
+        <div class="imagen">
+          <img src="./images/anonimo.png" id="imagen" alt="" />
+        </div>
+      </div>
+      <div class="resultados"></div>
+    </div>
+  </body>
+</html>

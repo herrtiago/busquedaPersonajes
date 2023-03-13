@@ -24,6 +24,7 @@ if (localStorage.getItem("contactos") != null) {
 }
 
 function buscarPersonajes() {
+  resultados.innerHTML ="";
   let personajeEncontrado = personas.find(
     (personaje) =>
       personaje.nombre.toUpperCase() === inputNombre.value.toUpperCase()
